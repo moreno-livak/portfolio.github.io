@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', 'arial';
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #6700EE;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  color: #7FEDF4;
+  font-weight: bold;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-media, .hero-design {
+  display: none;
+}
+
+.hero {
+  background: #6E00FF;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.more {
+  display: center;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #FF64CB;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+.featured {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.skills {
+  padding: 4em 4em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: #E5D5FA;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6E00FF;
+  letter-spacing: .2em;
+  font-size: .85em;
+}
+
+.featured-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: #3B3B3B;
+  margin-bottom: 3em;
+  font-size: .9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.featured-img {
+  border-radius: 1em;
+}
+
+.skills {
+  background: #FF64CB;
+}
+
+.skills-container ul li {
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  background: white;
+}
+
+.icon-container {
+  height: 60px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  width: 60px;
+}
+
+.skill-title {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.skill-desc {
+  margin-bottom: 2em;
+}
+
+.opening {
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opening .view-github {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #E5E5E5;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.opening .view-github img {
+  height: 15px;
+  width: 15px;
+  margin: 0.5em;
+}
+
+.opening .view-github p {
+  font-weight: 500;
+  font-size: .8em;
+  color: #3B3B3B;
+  text-transform: uppercase;
+  margin: 0.5em;
+}
+
+.portfolio-container {
+  background: #F5F5F5;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
+.portfolio-container1 {
+  background: #F5F5F5;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-top: 2em;
+  padding-bottom: 7em;
+}
+
+footer {
+  background: #6E00FF;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured, .inner {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .left, .portfolio-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .portfolio-containerfirst {
+    padding-top: 10em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #6700EE;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-media {
+    padding: 2em 4em 2em 0;
+  }
+  .featured, .skills-container, .portfolio-container {
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+  .social-media {
+    display: block;
+  }
+  .social-media ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-media ul img {
+    width: 25px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #6E00FF;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .more {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .portfolio img {
+    float: right;
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-media {
+    padding: 2em 10em 2em 0;
+  }
+  .featured, .skills-container, .portfolio-container {
+    padding-right: 10em;
+    padding-left: 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 2em 2em 15em;
+  }
+  .social-media {
+    padding: 2em 15em 2em 0;
+  }
+  .featured, .skills-container, .portfolio-container {
+    padding-right: 15em;
+    padding-left: 15em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 15em;
+  }
+}
+
+.hover figure {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hover figure:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/*# sourceMappingURL=main.css.map */
