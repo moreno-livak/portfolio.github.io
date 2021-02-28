@@ -10,7 +10,7 @@
 - Einfach das Projekt von GitHub kopieren und mit Version Control öffnen
 
 ## Usage & Details
-- Im Projekt habe ich SCSS statt CSS verwendet, nutze also die Live Sass Compiler Extension
+- Im Projekt habe ich SCSS statt CSS verwendet, nutze die Live Sass Compiler Extension
 - @import Poppins Schriftart
 
 ## ChangeLog & Roadmap
