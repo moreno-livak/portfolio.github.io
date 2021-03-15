@@ -16,6 +16,3 @@
 ## ChangeLog & Roadmap
 - Fertiggestellt am 28.02.2021
 - In Zukunft werden mehrere Seiten, Animation und die Wetter App als Projekt hinzugefüht
-
-## Credits
-- Inspiration: https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow
